@@ -47,7 +47,7 @@ nix-darwin.lib.darwinSystem {
         useGlobalPkgs = true;
         useUserPackages = true;
 
-        sharedModules = [ nedeco.homeManagerModules.minimal ];
+        sharedModules = [ nedeco.homeManagerModules.standard ];
 
         users."%SYSTEM_CURRENT_USER%" = import ../../customization/home-manager;
       };

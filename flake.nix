@@ -9,6 +9,7 @@
       homeManagerModules = {
         empty = import ./profiles/home-manager/empty.nix;
         minimal = import ./profiles/home-manager/minimal.nix;
+        standard = import ./profiles/home-manager/standard.nix;
       };
 
       templates = {

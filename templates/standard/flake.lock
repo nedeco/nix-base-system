@@ -173,11 +173,11 @@
     },
     "nedeco": {
       "locked": {
-        "lastModified": 1745839910,
-        "narHash": "sha256-eyvF7B3xcpo0OjxNHNR++QKSZjP6+wx1YdZhZsRGwcs=",
+        "lastModified": 1745849115,
+        "narHash": "sha256-Xm3kHKrzbD9y3LpQxGcKLN/89l2pQ6PtcOwxVgV8FGU=",
         "owner": "nedeco",
         "repo": "nix-base-system",
-        "rev": "1028d6177a52f362f8838c7d8c3d70ffc65e2d4e",
+        "rev": "d976b59eab033b7fbe631814486f72b8ef6d52ed",
         "type": "github"
       },
       "original": {
