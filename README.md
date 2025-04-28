@@ -42,7 +42,6 @@ cli-tools.enable
 direnv.enable
 ghostty.enable
 git.enable
-linkapps.enable
 zsh.enable
 ```
 

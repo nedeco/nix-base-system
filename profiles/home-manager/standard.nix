@@ -11,6 +11,5 @@ in
 
   nedeco = {
     ghostty.enable = mkDefault true;
-    linkapps.enable = mkDefault true;
   };
 }

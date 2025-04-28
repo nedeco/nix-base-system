@@ -4,7 +4,6 @@
     ./direnv
     ./ghostty.nix
     ./git.nix
-    ./linkapps.nix
     ./zsh
   ];
 }
