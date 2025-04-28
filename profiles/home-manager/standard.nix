@@ -8,8 +8,4 @@ in
     ../../programs/home-manager
     ./minimal.nix
   ];
-
-  nedeco = {
-    ghostty.enable = mkDefault true;
-  };
 }

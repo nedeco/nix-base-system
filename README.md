@@ -40,7 +40,6 @@ Enabling an option essentially just automatically configures a part of `nix-darw
 ```
 cli-tools.enable
 direnv.enable
-ghostty.enable
 git.enable
 zsh.enable
 ```
