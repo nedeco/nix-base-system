@@ -31,6 +31,7 @@ Enabling an option essentially just automatically configures a part of `nix-darw
 
 * `empty`: An empty profile that is used to make program-specific options available without enabling them
 * `minimal`: The minimal set of programs that _should_ be enabled on all development machines
+* `standard`: The minimal set of programs with some extra tools (mostly GUI programs) on top
 
 #### Options
 
@@ -39,7 +40,9 @@ Enabling an option essentially just automatically configures a part of `nix-darw
 ```
 cli-tools.enable
 direnv.enable
+ghostty.enable
 git.enable
+linkapps.enable
 zsh.enable
 ```
 
