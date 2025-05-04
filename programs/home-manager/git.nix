@@ -14,6 +14,8 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    programs.git-credential-oauth.enable = true;
+
     programs.git = {
       enable = true;
       lfs.enable = true;
@@ -53,6 +55,8 @@ in
         };
 
         merge = {
+          conflictStyle = "diff3";
+
           mergiraf = {
             name = "mergiraf";
             driver = "${lib.getExe pkgs.mergiraf} merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L";
@@ -106,6 +110,10 @@ in
         apply = {
           whitespace = "fix";
         };
+
+        credential.helper = [
+          "${config.programs.git.package}/bin/git-credential-osxkeychain"
+        ];
       };
 
       ignores = [
