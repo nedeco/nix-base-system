@@ -1,0 +1,20 @@
+cmd_name="$(basename "$0")"
+
+usage="$cmd_name [command] -- Nix helpers for a nedeco base system
+
+command:
+    debug        print debug information
+    full-update  update all flake inputs
+    update       update only the nedeco flake input
+    upgrade      build and apply the new configuration"
+
+if [[ $# -eq 0 ]]; then
+  echo "$usage"
+else
+  cmd="${cmd_name}-$1"
+  shift
+
+  $cmd "$@"
+fi
+
+# vim: ft=sh

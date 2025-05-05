@@ -1,0 +1,11 @@
+pushd ~/.config/nixpkgs >/dev/null || return
+
+echo "== Nix Version"
+nix --version
+
+printf "\n== System Flake\n"
+nix flake show
+
+popd >/dev/null || return
+
+# vim: ft=sh

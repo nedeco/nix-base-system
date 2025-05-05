@@ -1,0 +1,7 @@
+pushd ~/.config/nixpkgs >/dev/null || return
+
+nix flake update
+
+popd >/dev/null || return
+
+# vim: ft=sh

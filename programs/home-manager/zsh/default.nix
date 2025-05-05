@@ -103,5 +103,10 @@ in
         )
       ];
     };
+
+    home.file.".zsh/nedeco_functions" = {
+      source = ./functions;
+      recursive = true;
+    };
   };
 }
